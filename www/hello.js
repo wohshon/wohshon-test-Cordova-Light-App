@@ -3,6 +3,9 @@ document.getElementById('say_hello').onclick = function () {
   $fh.cloud(
       {
         path: 'hello',
+        headers: {
+          authorization: "secretz"
+        },
         data: {
           hello: document.getElementById('hello_to').value
         }
